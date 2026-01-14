@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Siddharth Shukla | BAMS - Holistic Patient Care</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.263.0/lucide.min.js"></script>
+    <style>
+        :root {
+            --primary: #1b4332; /* Deep Healing Green */
+            --accent: #2d6a4f;
+            --light-bg: #f7fdf9;
+            --white: #ffffff;
+            --text: #2d3436;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, sans-serif;
+            margin: 0;
+            background-color: var(--light-bg);
+            color: var(--text);
+            scroll-behavior: smooth;
+        }
+
+        /* Navigation */
+        nav {
+            background: var(--white);
+            padding: 1rem 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo { font-size: 1.4rem; font-weight: 700; color: var(--primary); }
+
+        /* Hero Section */
+        .hero {
+            display: flex;
+            align-items: center;
+            padding: 60px 10%;
+            background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+            gap: 40px;
+        }
+
+        .hero-text { flex: 1; }
+        .hero-image { flex: 1; text-align: right; }
+        .hero-image img {
+            width: 320px;
+            height: 320px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 8px solid var(--white);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .badge {
+            background: var(--primary);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+
+        /* Features */
+        .section { padding: 80px 10%; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
+        
+        .card {
+            background: var(--white);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            text-align: center;
+            transition: 0.3s;
+        }
+        .card:hover { transform: translateY(-5px); }
+
+        /* Quote Section */
+        .quote-section {
+            background: var(--primary);
+            color: white;
+            text-align: center;
+            padding: 60px 10%;
+        }
+
+        /* Form */
+        .booking-container { max-width: 600px; margin: 0 auto; background: white; padding: 40px; border-radius: 20px; box-shadow: 0 10px 40px rgba(0,0,0,0.1); }
+        form { display: flex; flex-direction: column; gap: 15px; }
+        input, select, textarea { padding: 12px; border: 1px solid #ddd; border-radius: 8px; font-size: 1rem; }
+        
+        .btn {
+            background: var(--accent);
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        /* WhatsApp Button */
+        .whatsapp-btn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #25d366;
+            color: white;
+            padding: 15px 25px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            z-index: 999;
+        }
+
+        @media (max-width: 768px) {
+            .hero { flex-direction: column; text-align: center; }
+            .hero-image { order: -1; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">Dr. Siddharth Shukla</div>
+        <a href="#book" class="btn" style="padding: 10px 20px;">Book Call</a>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-text">
+            <span class="badge">BAMS | 3+ Years Experience</span>
+            <h1 style="font-size: 2.8rem; margin: 10px 0;">Compassionate Care for Your Holistic Wellness</h1>
+            <p style="font-size: 1.2rem; line-height: 1.6; color: #444;">Providing authentic Ayurvedic consultations tailored to your unique body type. I believe in treating the person, not just the symptoms.</p>
+            <a href="#book" class="btn">Start Consultation</a>
+        </div>
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=800&q=80" alt="Dr. Siddharth Shukla">
+        </div>
+    </header>
+
+    <section class="quote-section">
+        <h2 style="font-style: italic;">"True health is the harmony of body, mind, and spirit."</h2>
+        <p>— Dedicated to patient-first healthcare</p>
+    </section>
+
+    <section class="section">
+        <h2 style="text-align: center; margin-bottom: 40px;">Clinical Specialities</h2>
+        <div class="grid">
+            <div class="card">
+                <i data-lucide="leaf" style="color: var(--accent); margin-bottom: 10px;"></i>
+                <h3>Prakriti Analysis</h3>
+                <p>Understanding your unique constitution for a personalized diet and lifestyle plan.</p>
+            </div>
+            <div class="card">
+                <i data-lucide="activity" style="color: var(--accent); margin-bottom: 10px;"></i>
+                <h3>Chronic Care</h3>
+                <p>Specialized management for long-term health concerns through natural herbs.</p>
+            </div>
+            <div class="card">
+                <i data-lucide="smile" style="color: var(--accent); margin-bottom: 10px;"></i>
+                <h3>Mental Wellness</h3>
+                <p>Stress management and sleep optimization using traditional Ayurvedic wisdom.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="book" style="background: #e8f5e9;">
+        <div class="booking-container" id="form-box">
+            <h2 style="text-align: center;">Consult with Dr. Shukla</h2>
+            <p style="text-align: center; color: #666;">Fill the form below and we will contact you shortly.</p>
+            <form id="consultationForm">
+                <input type="text" id="name" placeholder="Full Name" required>
+                <input type="email" placeholder="Email Address" required>
+                <select required>
+                    <option value="">Reason for Consultation</option>
+                    <option>Digestive Health</option>
+                    <option>Lifestyle & Diet Advice</option>
+                    <option>General Immunity</option>
+                    <option>Other</option>
+                </select>
+                <textarea placeholder="Tell us how we can help you..." rows="4"></textarea>
+                <button type="submit" class="btn">Send Request</button>
+            </form>
+        </div>
+    </section>
+
+    <a href="https://wa.me/91YOURNUMBER?text=Hi%20Dr.%20Siddharth,%20I%20would%20like%20to%20book%20a%20consultation" class="whatsapp-btn" target="_blank">
+        <i data-lucide="message-circle"></i>
+        <span>Chat on WhatsApp</span>
+    </a>
+
+    <footer style="padding: 40px; text-align: center; color: #777;">
+        <p><strong>Dr. Siddharth Shukla</strong><br>BAMS | Wellness & Healthcare Specialist</p>
+        <p>&copy; 2026 Holistic Ayurveda. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Initialize Icons
+        lucide.createIcons();
+
+        // Success Message Logic
+        const form = document.getElementById('consultationForm');
+        const formBox = document.getElementById('form-box');
+
+        form.onsubmit = function(e) {
+            e.preventDefault();
+            const patientName = document.getElementById('name').value;
+            
+            formBox.innerHTML = `
+                <div style="text-align: center; animation: fadeIn 0.5s ease;">
+                    <i data-lucide="check-circle" style="color: #2d6a4f; width: 50px; height: 50px; margin-bottom: 20px;"></i>
+                    <h2 style="color: #1b4332;">Request Sent, ${patientName}!</h2>
+                    <p style="color: #555; line-height: 1.6;">
+                        Thank you for your trust. Dr. Siddharth Shukla will review your message and 
+                        contact you via email or phone within the next <strong>2 hours</strong>.
+                    </p>
+                    <button onclick="location.reload()" class="btn" style="margin-top: 20px; font-size: 0.8rem;">Go Back</button>
+                </div>
+            `;
+            lucide.createIcons();
+        };
+    </script>
+
+    <style>
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+    </style>
+</body>
+</html>
